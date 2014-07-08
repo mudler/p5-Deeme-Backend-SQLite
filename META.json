@@ -1,5 +1,5 @@
 {
-   "abstract" : "Blah blah blah",
+   "abstract" : "SQLite Backend using DBI for Deeme",
    "author" : [
       "mudler <mudler@dark-lab.net>"
    ],
@@ -26,7 +26,8 @@
    "prereqs" : {
       "configure" : {
          "requires" : {
-            "Module::Build::Tiny" : "0.035"
+            "Module::Build::Tiny" : "0.035",
+            "perl" : "5.008005"
          }
       },
       "develop" : {
@@ -36,16 +37,35 @@
       },
       "runtime" : {
          "requires" : {
-            "perl" : "5.008005"
+            "DBD::SQLite" : "0",
+            "DBI" : "0",
+            "Deeme" : "0",
+            "Deeme::Backend::DBI" : "0",
+            "Deeme::Backend::Mango" : "0",
+            "Deeme::Obj" : "0",
+            "Deeme::Utils" : "0",
+            "feature" : "0"
          }
       },
       "test" : {
          "requires" : {
-            "Test::More" : "0.88"
+            "Carp::Always" : "0",
+            "Test::More" : "0"
          }
       }
    },
    "release_status" : "stable",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/mudler/p5-Deeme-Backend-SQLite/issues"
+      },
+      "homepage" : "https://github.com/mudler/p5-Deeme-Backend-SQLite",
+      "repository" : {
+         "type" : "git",
+         "url" : "https://github.com/mudler/p5-Deeme-Backend-SQLite.git",
+         "web" : "https://github.com/mudler/p5-Deeme-Backend-SQLite"
+      }
+   },
    "version" : "0.01"
 }
 
