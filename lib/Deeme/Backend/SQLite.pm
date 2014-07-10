@@ -37,9 +37,9 @@ Deeme::Backend::SQLite - SQLite Backend using DBI for Deeme
   use Deeme::Backend::SQLite;
   my $e = Deeme->new( backend => Deeme::Backend::SQLite->new(
         database => "/var/tmp/deeme.db",
-        username     => "user",
-        password      => "something",
-        options         => { RaiseError=> 1 }
+        username => "user",
+        password => "something",
+        options  => { RaiseError=> 1 }
     ) );
 
 =head1 DESCRIPTION
