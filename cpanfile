@@ -2,7 +2,6 @@ requires 'DBD::SQLite';
 requires 'DBI';
 requires 'Deeme';
 requires 'Deeme::Backend::DBI';
-requires 'Deeme::Backend::Mango';
 requires 'Deeme::Obj';
 requires 'Deeme::Utils';
 requires 'feature';
