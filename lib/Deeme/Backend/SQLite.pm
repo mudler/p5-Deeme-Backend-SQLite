@@ -1,6 +1,6 @@
 package Deeme::Backend::SQLite;
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 use Deeme::Obj 'Deeme::Backend';
 use DBI;
 require DBD::SQLite;
